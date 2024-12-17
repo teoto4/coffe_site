@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: #ffff
+}
+
+h1, h2, h3, h4{
+    font-weight: 100;
+    font-size: 0px;
+    padding: 0;
+    margin: 0;
+}
+
+.inter {
+  font-family: "Inter", serif;
+  font-optical-sizing:auto;
+  font-weight: 400;
+  font-style: normal;
+  /* color: #ffff; */
+}
+
+.righteous-regular {
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.urbanist {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body{
+    width: 100vw;
+
+    header{
+        height: 125px;
+        width: 100%;
+        background-color: #1C1814;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .header_container{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .left_nav{
+                display: flex;
+                li{
+                    cursor: pointer;
+                    font-size: 18px;
+                    margin-left: 48px;
+                }
+                li:hover{
+                    color: #C99E71;
+                }
+            }
+
+            .logo{
+                cursor: pointer;
+            }
+
+            .right_nav{
+                display: flex;
+                li{
+                    cursor: pointer;
+                    font-size: 18px;
+                    margin-left: 48px;
+                }
+                li:hover{
+                    color: #C99E71;
+                }
+                img{
+                    cursor: pointer;
+                    margin-left: 48px;
+                }
+                img:hover{
+                    filter:opacity(50%)
+                }
+            }
+        }
+    }
+
+    main{
+        width: 100%;
+        background-color: #14110E;
+        .morning_coffee{
+            position: relative;
+            width: 100%;
+            height: 764px;
+            background-image: url(./img/image/main_background.png);
+            display: flex;
+            
+            .back_video{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            video::-webkit-media-controls-play-button,
+            video::-webkit-media-controls-timeline,
+            video::-webkit-media-controls-current-time-display,
+            video::-webkit-media-controls-time-remaining-display,
+            video::-webkit-media-controls-fullscreen-button,
+            video::-webkit-download-button,
+            video::-webkit-media-controls-download-button{
+                display: none;
+            }
+
+            
+            .morning_coffee_container{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                z-index: 2;
+                height: 100%;
+                justify-content: center;
+                margin-left: 375px;
+                .morning_coffee_h{
+                    font-size: 72px;
+                    color: aliceblue;
+                }
+                .morning_coffee_discription{
+                    margin-top: 32px;
+                    color: #ffffff80;
+                    font-size: 20px;
+                }
+                .test_link{
+                    text-transform: uppercase;
+                    text-align: center;
+                    max-width: 202px;
+                    margin-top: 64px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    background-color: #C99E71;
+                    padding: 24px 40px;
+                }
+            }
+        }
+
+        .why_us{
+            width: 100%;
+            height: 754px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .cards{
+                width: 62%;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    footer{
+        height: 200px;
+        background-color: #14110E;
+    }
+}
+
